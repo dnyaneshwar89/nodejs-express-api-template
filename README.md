@@ -59,19 +59,19 @@ The folder structure is designed to organize the codebase logically, separating 
 
 ## Getting Started
 
-1. Clone this repository: `git clone <repository-url>`
+1. Clone this repository: `git clone https://github.com/dnyaneshwar89/nodejs-express-api-template`
 2. Install dependencies: `npm install`
 3. Set up your environment variables: Create a copy of `.env.sample` file and name it `.env.development`( use `.env.production` or `.env` on production) and define your environment variables.
 4. Run the application: `npm start`
 
 ## Patterns followed
 
-1. **Try - Catch** - For every function you define it is better to create it in a `try-catch` format( Refer controllers,helpers, etc.). It prevents your app from crashing even if your code fails in any manner.
+1. **Try - Catch** - For every function you define, it is better to create it in a `try-catch` format( Refer controllers,helpers, etc.). It prevents your app from crashing even if your code fails in any manner.
 
-2. **Format for Return** - Every function should return in the format of [data,err] which helps in handling errors in case of failure in function as well as data in case of successfull execution of function.
+2. **Format for Return** - Every function should return in the format of [data,err] which helps in handling errors in case of failure of function as well as data in case of successfull execution of function.
 
-3. **Import pattern** - You can import a function in several ways. One if you import it directly from the file ( Refer import of `userController` in `src/routes/v1/index.js`), import from `index.js` of the folder ( Refer to `UserHelper` in `src/controllers/v1/user/user.controllers.js` which is actually an import from `src/helpers/user/index.js`). If you are importing from a folder then by default it imports from index.js in that folder. You can choose how you want to import files from your folder.
+3. **Import pattern** - You can import a function in several ways. One is you import it directly from the file ( Refer import of `userController` in `src/routes/v1/index.js`), import from `index.js` of the folder ( Refer to `UserHelper` in `src/controllers/v1/user/user.controllers.js` which is actually an import from `src/helpers/user/index.js`). If you are importing from a folder then by default it imports from index.js in that folder. You can choose how you want to import files from your folder.
 
 4. **Group your imports** - You should follow a specific order for imports in your file which maintains tidyness in your code and makes it easy to read. For e.g. you can follow the order Utility functions, Packages, Repository functions, Helpers or Services etc
 
-5. **JSDoc comments** - Try to provide JSDoc comments for every function from the start and try to include all information like the description of function indicating what it does, definition of the params, what it returns, anything to keep in mind when using the function or when modifying the function, Reference to any article or so from which any logic in the function was inspired. This helps other developers to understand the function better ( This will be THE most important thing as your codebase grows :\) ).
+5. **JSDoc comments** - Try to provide JSDoc comments for every function from the start of the project and try to include all information like the description of function indicating what it does, definition of the params, what it returns, anything to keep in mind when using the function or when modifying the function, Reference to any article or so from which any logic in the function was inspired. This helps other developers to understand the function better ( This will be THE most important thing as your codebase grows :\) ).
