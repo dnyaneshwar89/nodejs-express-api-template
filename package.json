@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-express-api-template",
+  "version": "1.0.0",
+  "description": "A template for a api made in nodejs using express framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development node src/index.js",
+    "start": "node src/index.js"
+  },
+  "author": "Dnyaneshwar B",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "helmet": "^7.1.0",
+    "http": "^0.0.1-security",
+    "morgan": "^1.10.0",
+    "prettier": "^3.2.5",
+    "uuid": "^9.0.1"
+  }
+}

@@ -1,0 +1,24 @@
+# Node specific things
+node_modules
+
+# Envs
+.env
+.env.development
+.env.dev
+.env.deve
+.env.production
+.env.test
+
+# scripts
+playground.js
+
+# Files for other services
+app.yaml
+pm2config.json
+service-account.json
+.vscode
+
+# Logs folder
+logs/
+
+
